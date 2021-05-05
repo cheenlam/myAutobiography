@@ -35,7 +35,7 @@
             case "hilo_poker": window.window.open('https://cheenlam.github.io/hilo_poker/');
             break;
 
-            case "realFarm": window.window.open('https://cheenlam.github.io/RealFarm/');
+            case "gamelFarm": window.window.open('https://cheenlam.github.io/gamelFarm/');
             break;
 
             case "casino": window.window.open('https://cheenlam.github.io/casino/');
