@@ -20,6 +20,24 @@
     $('#collection>div').click(function(){
         var name = $(this).attr("id")
         switch(name){
+            case "womenStore": window.window.open('https://cheenlam.github.io/womenStore/');
+            break;
+            
+            case "gamePanda": window.window.open('https://cheenlam.github.io/gamePanda/');
+            break;
+
+            case "BB_HiLo": window.window.open('https://cheenlam.github.io/BB_HiLo/');
+            break;
+
+            case "gameMonkey": window.window.open('https://cheenlam.github.io/gameMonkey/');
+            break;
+
+            case "hilo_poker": window.window.open('https://cheenlam.github.io/hilo_poker/');
+            break;
+
+            case "realFarm": window.window.open('https://cheenlam.github.io/RealFarm/');
+            break;
+
             case "casino": window.window.open('https://cheenlam.github.io/casino/');
             break;
 
