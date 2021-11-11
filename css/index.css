@@ -138,6 +138,7 @@ li{
     max-width: 900px;
     margin: auto;
     padding: 30px;
+    overflow: hidden;
 }
 .collection h5{
     font-size: 30px;
@@ -153,20 +154,24 @@ li{
 .collection_content{
     margin-top: 100px;
 }
-.collection_content>div{
+
+
+.collection_content .list{
     display: flex;
     align-items: center;
     margin-bottom: 30px;
     padding: 10px;
-    transition: 0.3s;
+    transition: 0.5s;
     border-bottom: 1px solid rgb(211, 208, 208);
     cursor: pointer;
 }
 
-.collection_content>div:hover{
+.collection_content .list:hover{
     box-shadow: 2px 2px 15px 2px rgb(211, 208, 208);
 }
-
+.collection_content a{
+    text-decoration:none
+}
 
 .collection_pic{
     width: 30%;
@@ -206,7 +211,6 @@ li{
     color: #fff;
     opacity: 0.5;
     transition: 0.3s;
-    display: none;
 }
 .gotop .fas{
     font-size: 30px;

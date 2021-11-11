@@ -8,84 +8,69 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="https://kit.fontawesome.com/78e6f741f4.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/vue_3.2.19.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/index.js"></script>
     <title>個人履歷網頁</title>
-
 </head>
 
 <body>
-    <!-- main start -->
-    <div class="main">
-        <div class="main_pic"></div>
-        <div class="main_msg">
-            <h1>陳正倫</h1>
+    <div id="page">
+        <!-- main start -->
+        <div class="main">
+            <div class="main_pic"></div>
+            <div class="main_msg">
+                <h1>陳正倫</h1>
+                <ul>
+                    <li>
+                        <i class="fas fa-user-tie"></i> Chen ,Cheng -Lun / Taichung，TW / 1983年05月27日
+                    </li>
+                    <li><i class="fas fa-envelope"></i>
+                        <tt>redsinsue@gmail.com</tt> / 0980-178570
+                    </li>
+                    <li>
+                        <i class="fab fa-github"></i> GitHub：
+                        <a href="https://github.com/cheenlam">https://github.com/cheenlam</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- autobiography start -->
+        <div class="autobiography" data-aos="zoom-in" data-aos-duration="1000">
             <ul>
-                <li>
-                    <i class="fas fa-user-tie"></i> Chen ,Cheng -Lun / Taichung，TW / 1983年05月27日
+                <li>您好，我的名字叫陳正倫，現居台中市南屯區。 </li>
+                <li>役畢踏入職場至今已有十年的工作經驗，在這幾年間，都秉持著盡全力完成公司交辦的 工作，並因應公司產能需求配合加班。過去幾年，我都在自動化控制領域發展，對於編 寫PLC程式，以及邏輯思考方面都有極高的熱忱。 </li>
+                <li>上一份工作是在精密科學園區擔任助理工程師，因工作需求，接觸到編寫軟體程式的領 域，對其十分感興趣，考慮到未來全球將走向全面電腦自動化，毅然決然投入這個專業 的領域。
                 </li>
-                <li><i class="fas fa-envelope"></i>
-                    <tt>redsinsue@gmail.com</tt> / 0980-178570
+                <li>因此，前往中區資策會學習全端程式設計，從手刻HTML5、CSS前端RWD網頁開始學習、 到使用套件Bootstrap快速切版，到之後利用JavaScript以及JQuery增添網頁的互動 功能，包含drop拖拉事件判斷、碰撞判斷、scroll捲軸滑動、購物車、以setInterval 計時器製作清單輪播、倒數計時器等功能，也學會使用ES6的新寫法，以及Mysql資料庫 增修刪查的基礎語法，目前正努力學習後端 Java程式，除了資策會的課程，課後也積極 瀏覽更多線上課程。
                 </li>
-                <li>
-                    <i class="fab fa-github"></i> GitHub：
-                    <a href="https://github.com/cheenlam">https://github.com/cheenlam</a>
+                <li>這段時間以來，一步步累積作品精實自己的能力的過程中，更加確定程式開發是我喜愛的 工作，我願意全心投入，期望未來我能製作出更多作品，並成為具備獨立開發能力的軟體 工程師。
                 </li>
             </ul>
         </div>
-    </div>
 
-    <!-- autobiography start -->
-    <div class="autobiography">
-        <ul>
-            <li>您好，我的名字叫陳正倫，現居台中市南屯區。 </li>
-            <li>役畢踏入職場至今已有十年的工作經驗，在這幾年間，都秉持著盡全力完成公司交辦的 工作，並因應公司產能需求配合加班。過去幾年，我都在自動化控制領域發展，對於編 寫PLC程式，以及邏輯思考方面都有極高的熱忱。 </li>
-            <li>上一份工作是在精密科學園區擔任助理工程師，因工作需求，接觸到編寫軟體程式的領 域，對其十分感興趣，考慮到未來全球將走向全面電腦自動化，毅然決然投入這個專業 的領域。
-            </li>
-            <li>因此，前往中區資策會學習全端程式設計，從手刻HTML5、CSS前端RWD網頁開始學習、 到使用套件Bootstrap快速切版，到之後利用JavaScript以及JQuery增添網頁的互動 功能，包含drop拖拉事件判斷、碰撞判斷、scroll捲軸滑動、購物車、以setInterval 計時器製作清單輪播、倒數計時器等功能，也學會使用ES6的新寫法，以及Mysql資料庫 增修刪查的基礎語法，目前正努力學習後端 Java程式，除了資策會的課程，課後也積極 瀏覽更多線上課程。
-            </li>
-            <li>這段時間以來，一步步累積作品精實自己的能力的過程中，更加確定程式開發是我喜愛的 工作，我願意全心投入，期望未來我能製作出更多作品，並成為具備獨立開發能力的軟體 工程師。
-            </li>
-        </ul>
-    </div>
-
-    <!-- skill start -->
-    <div class="skill" id="skill">
-        <h5>Skill</h5>
-        <div class="skill_content">
-            <div>
-                <span>前端開發</span>
-                <ul>
-                    <li>Html5</li>
-                    <li>Css</li>
-                    <li>Bootstrap</li>
-                    <li>JavaScript </li>
-                    <li>JQuery </li>
-                    <li>javascriptES6 </li>
-                    <li>Git</li>
+        <!-- skill start -->
+        <div class="skill" id="skill" data-aos="zoom-in" data-aos-duration="1000">
+            <h5>Skill</h5>
+            <div class="skill_content">
+                <template v-for="(item,index) in skills">
+                    <div>
+                        <span>{{item.title}}</span>
+                        <ul>
+                            <template v-for="(i,index) in item.list">
+                                <li>{{i}}</li>
+                            </template>
                 </ul>
             </div>
-            <div>
-                <span>後端開發</span>
-                <ul>
-                    <li>MySQL</li>
-                    <li>Java</li>
-                </ul>
-            </div>
-            <div>
-                <span>其他</span>
-                <ul>
-                    <li>Visual Studio Code</li>
-                    <li>Sublime</li>
-                    <li>Adobe Photoshop</li>
-                    <li>Adobe Animate</li>
-                    <li>AutoCAD</li>
-                    <li>PLC</li>
-                </ul>
-            </div>
+            </template>
         </div>
     </div>
 
     <!-- education start -->
-    <div class="education">
+    <div class="education" data-aos="zoom-in" data-aos-duration="1000">
         <h5>Education</h5>
         <div class="education_content">
             <ul>
@@ -96,11 +81,12 @@
         </div>
     </div>
 
-    <div class="education">
+    <div class="education" data-aos="zoom-in" data-aos-duration="1000">
         <h5>Experience </h5>
         <div class="education_content">
             <ul>
                 <li>鈗聯資訊有限公司 ─ 網頁工程師，2020 年 2 月 - 2021 年 4 月</li>
+                <li>鴻和國際 ─ 前端工程師，2020 年 8 月 - 至今</li>
             </ul>
         </div>
     </div>
@@ -108,7 +94,7 @@
     <!-- collection start  -->
     <div class="collection">
         <h5>Collection</h5>
-        <div class="collection_txt">
+        <div class="collection_txt" data-aos="zoom-in" data-aos-duration="1000">
             <ul>
                 <li>以下為踏入前端領域至今的相關作品</li>
                 <li>全數使用HTML、CSS純手刻切版，唯一後台網站使用Bootstrap快速套版製作，應用JavaScript 與JQuery編寫判斷及執行函式，並加入ES6寫法，其中包含drop拖拉事件判斷、碰撞判斷、 scroll捲軸滑動、購物車、以setInterval計時器製作清單輪播、倒數計時器等功能。
@@ -117,239 +103,64 @@
         </div>
 
         <div class="collection_content" id="collection">
-            <div id="womenStore">
-                <div class="collection_pic">
-                    <img src="image/works_b01.jpg">
-                </div>
-                <div class="collection_Introduction">
-                    <ul>
-                        <li>女裝購物網</li>
-                        <li>純手刻RWD響應式網頁。</li>
-                        <li>使用JavaScript製作購物車功能，可將商品加入購物清單、刪除清單商品、顯示清單總數、總金額等功能。</li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="gamePanda">
-                <div class="collection_pic">
-                    <img src="image/works_b05.jpg">
-                </div>
-                <div class="collection_Introduction">
-                    <ul>
-                        <li>跑酷熊貓</li>
-                        <li>HTML5 相關遊戲。</li>
-                        <li>使用Adobe Animate在HTML中建立canvas元素，並以 Node.js 以及 JavaScript 語法控制相關物件演示畫面。</li>
-                        <li>上方頭像區會根據畫面，進行名次變更，以便於呈現最後賽果。</li>
-                    </ul>
-                </div>
-            </div>
-            <div id="gameMonkey">
-                <div class="collection_pic">
-                    <img src="image/works_b07.jpg">
-                </div>
-                <div class="collection_Introduction">
-                    <ul>
-                        <li>BB猴子爬樹</li>
-                        <li>HTML5 相關遊戲。</li>
-                        <li>參考BB猴子爬樹html遊戲練習製作，使用Adobe Animate在HTML中建立canvas元素，並以 Node.js 以及 JavaScript 語法控制相關物件演示畫面。</li>
-                        <li>目前僅為靜態網頁，可使用網頁上按鈕做操控</li>
-                    </ul>
-                </div>
-            </div>
-            <div id="BB_HiLo">
-                <div class="collection_pic">
-                    <img src="image/works_b06.jpg">
-                </div>
-                <div class="collection_Introduction">
-                    <ul>
-                        <li>BB高低輪盤</li>
-                        <li>HTML5 相關遊戲。</li>
-                        <li>參考BB高低輪盤html遊戲練習製作，利用 純CSS 以及 JQuery 呈現各種動畫效果。</li>
-                        <li>目前僅為靜態網頁，可使用網頁上按鈕做操控</li>
-                    </ul>
-                </div>
-            </div>
-            <div id="hilo_poker">
-                <div class="collection_pic">
-                    <img src="image/works_b03.jpg">
-                </div>
-                <div class="collection_Introduction">
-                    <ul>
-                        <li>HiLo Poker</li>
-                        <li>HTML5 相關遊戲。</li>
-                        <li>撲克牌猜高低遊戲，利用 純CSS 以及 JQuery 呈現各種動畫效果。</li>
-                        <li>目前僅為靜態網頁，可使用網頁上按鈕做操控</li>
-                    </ul>
-                </div>
-            </div>
-            <div id="gamelFarm">
-                <div class="collection_pic">
-                    <img src="image/works_b04.jpg">
-                </div>
-                <div class="collection_Introduction">
-                    <ul>
-                        <li>RealFarm</li>
-                        <li>純手刻RWD響應式網頁。</li>
-                        <li>線上編輯該遊戲銷售清單網頁，使用localStorage儲存使用者相關資料。並崁入文字編輯器製作訊息輸入欄位。</li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-            <div id="casino">
-                <div class="collection_pic">
-                    <img src="image/works_01.jpg">
-                </div>
-                <div class="collection_Introduction">
-                    <ul>
-                        <li>線上博弈入口網站</li>
-                        <li>於資策會獨立開發的作品。</li>
-                        <li>手刻RWD響應式網頁，利用 transform屬性將圖片做出各種動畫效果。</li>
-                        <li>使用JavaScript語法製作捲軸輪播。</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="roulette">
-                <div class="collection_pic">
-                    <img src="image/works_02.jpg">
-                </div>
-                <div class="collection_Introduction">
-                    <ul>
-                        <li>輪盤Roulette Casino(遊戲)</li>
-                        <li>於資策會獨立開發的作品，網頁版輪盤遊戲。</li>
-                        <li>參考真實賭場輪盤遊戲，以JavaScript監聽drop事件，判斷各別區塊籌碼疊加畫面，控制轉盤轉動，random亂數產生珠子落入的格子號碼，並判斷各下注區域賠率以及返回金額。
-                        </li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="football">
-                <div class="collection_pic">
-                    <img src="image/works_03.jpg">
-                </div>
-                <div class="collection_Introduction">
-                    <ul>
-                        <li>世界杯球隊介紹網站</li>
-                        <li>純手刻RWD響應式網頁。</li>
-                        <li>以css與JavaScript搭配展現開頭LOGO及選單滑入動畫、倒數計時、購物清單輪播、選單動畫、捲軸滑動。</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="acetic">
-                <div class="collection_pic">
-                    <img src="image/works_04.jpg">
-                </div>
-                <div class="collection_Introduction">
-                    <ul>
-                        <li>購物車網站</li>
-                        <li>純手刻RWD響應式網頁。</li>
-                        <li>使用JavaScript製作購物車功能，可將商品加入購物清單、刪除清單商品、顯示清單總數、總金額等功能。</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="factory">
-                <div class="collection_pic">
-                    <img src="image/works_05.jpg">
-                </div>
-                <div class="collection_Introduction">
-                    <ul>
-                        <li>企業網站</li>
-                        <li>純手刻RWD響應式網頁。</li>
-                        <li>iframe引進google地圖，使用JQuery 控制各區塊內容縮放，選單滑動、至頂按鈕滑動效果。</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="film">
-                <div class="collection_pic">
-                    <img src="image/works_06.jpg">
-                </div>
-                <div class="collection_Introduction">
-                    <ul>
-                        <li>電影購票網站</li>
-                        <li>純手刻RWD響應式網頁。</li>
-                        <li>使用JQuery 控制選單滑動、至頂按鈕滑動效果、並且引用animate.css製作內文動畫。</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="wedding">
-                <div class="collection_pic">
-                    <img src="image/works_07.jpg">
-                </div>
-                <div class="collection_Introduction">
-                    <ul>
-                        <li>婚攝顧客滿意度調查</li>
-                        <li>純手刻RWD響應式網頁。</li>
-                        <li>使用JavaScript製作開頭圖片輪播，並以mouse事件，控制輪播暫停/啟動動作、選單滑動、至頂按鈕滑動效果。</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="farm">
-                <div class="collection_pic">
-                    <img src="image/works_08.jpg">
-                </div>
-                <div class="collection_Introduction">
-                    <ul>
-                        <li>農產品介紹網站</li>
-                        <li>純手刻RWD響應式網頁。</li>
-                        <li>手刻RWD響應式網頁，使用JQuery 製作點擊小圖置換滿版圖片效果，並控制圖片捲軸位置。</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="rearEnd">
-                <div class="collection_pic">
-                    <img src="image/works_09.jpg">
-                </div>
-                <div class="collection_Introduction">
-                    <ul>
-                        <li>後台網站</li>
-                        <li>使用Bootstrap快速套版製作</li>
-                        <li>並使用JQuery加入些許動畫效果，內文方面則以iframe指定的html。</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="game">
-                <div class="collection_pic">
-                    <img src="image/works_10.jpg">
-                </div>
-                <div class="collection_Introduction">
-                    <ul>
-                        <li>碰撞小遊戲</li>
-                        <li>random亂數取出陣列位置數值及障礙物圖片編號、並以X,Y相關座標，作為碰撞判斷的小遊戲。</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div id="computer">
-                <div class="collection_pic">
-                    <img src="image/works_11.jpg">
-                </div>
-                <div class="collection_Introduction">
-                    <ul>
-                        <li>簡易小計算機</li>
-                        <li>利用JavaScript四則運算、變數運用，實現簡易小計算機。</li>
-                    </ul>
-                </div>
-            </div>
-
+            <template v-for="(item,index) in works">
+                    <a :href="item.href" target="_blank">
+                        <div class="list" data-aos="fade-left" data-aos-duration="1000">
+                            <div class="collection_pic">
+                                <img :src="item.img">
+                            </div>
+                            <div class="collection_Introduction">
+                                <ul>
+                                    <template v-for="(item,index) in item.info">
+                                        <li>{{item}}</li>
+                                    </template>
+                                </ul>
+                            </div>
+                        </div>
+                     </a>
+            </template>
         </div>
     </div>
 
     <!-- gotop start -->
-    <div class="gotop" id="gotop">
+    <div class="gotop" @click="goTop()" v-show="topSwitch">
         <i class="fas fa-angle-up"></i>
     </div>
 
+    </div>
 
-    <script src="script/index.js"></script>
+
+    <script>
+        Vue.createApp({
+            data() {
+                return {
+                    skills: skills,
+                    works: works,
+                    topSwitch: false,
+                };
+            },
+            methods: {
+                goTop() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: "smooth"
+                    });
+                },
+                topShow() {
+                    if (window.scrollY > $('#skill').offset().top) {
+                        this.topSwitch = true
+                    } else {
+                        this.topSwitch = false
+                    };
+                }
+            },
+            mounted() {
+                window.addEventListener('scroll', this.topShow);
+            },
+        }).mount("#page");
+
+        AOS.init();
+    </script>
 
 </body>
 
